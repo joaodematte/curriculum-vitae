@@ -1,0 +1,165 @@
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2008 Nathaniel Johnston <nathaniel@nathanieljohnston.com> http://www.nathanieljohnston.com
+% (l) 2012 Arun I B <arunib@smail.iitm.ac.in> http://www.ee.iitm.ac.in/~ee10s026/
+%This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 2.5 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.5/ or send a letter to Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+\newlength{\outerbordwidth}
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\usepackage[svgnames]{xcolor}
+\usepackage{framed}
+\usepackage{times}
+\usepackage{tocloft}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage[utf8]{inputenc}
+\usepackage{tabularx}
+\title{CV_joaodematte_portuguese}
+%-----------------------------------------------------------
+%Edit these values as you see fit
+
+\setlength{\outerbordwidth}{3pt}  % Width of border outside of title bars
+\definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
+\definecolor{shadecolorB}{gray}{0.93}  % Inner background color of title bars
+
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{9.5in}
+\setlength{\textwidth}{7in}
+\setlength{\topmargin}{-0.3in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{\vspace{8pt}
+  \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
+    \begin{shaded}
+\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
+    \end{shaded}
+  }\vspace{-5pt}
+}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+%-----------------------------------------------------------
+%Insert IIT Madras Logo 
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large João Guilherme Gabriel Dematte } & \\
+  Estudante de Ciência da Computação & \\
+  Joinville, SC, Brasil  \\
+  demattejoao@gmail.com | https://github.com/joaodematte \\
+\end{tabular*}
+\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Educação}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item
+	\ressubheading{Universidade do Estado de Santa Catarina}{Joinville, SC}{Bacharelado em Ciência da Computação}{2020 - o momento}
+	\begin{itemize}
+	    \resitem{Monitor de Estrutura de Dados}
+		\resitem{Membro bolsista do Grupo de Extensão em Software e Hardware Livre}
+	\end{itemize}
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Informações Pessoais}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{center}
+  \parbox{6.762in}{Desenvolvedor apaixonado por front-end e entusiasta de sistemas operacionais e linguagens de programação. Começou a programar desenvolvendo plugins para servidores de Minecraft e criando servidores privados de Habbo Hotel.}
+  \end{center}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Experiência Profissional}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item
+	\ressubheading{Estrutura de Dados}{Universidade do Estado de Santa Catarina}{Monitor da matéria}{Jul. 2021 - o momento}
+	\begin{itemize}
+		\resitem{Auxiliar alunos com dúvidas sobre tópicos da matéria.}
+		\resitem{Ajudar o professor orientador com tarefas semanais.}
+	\end{itemize}
+
+\item 
+	\ressubheading{TOPSUN Energia Solar}{Jaraguá do Sul, SC}{Analista de Projetos}{Set. 2021 - o momento}
+	\begin{itemize}
+		\resitem{Desenvolvimento de desenhos técnicos para a instalação de sistemas fotovoltaicos.}
+	\end{itemize}
+
+\item 
+	\ressubheading{TOPSUN Energia Solar}{Jaraguá do Sul, SC}{Analista de Projetos}{Mar. 2021 - Set. 2021}
+	\begin{itemize}
+		\resitem{Verificação da viabilidade e necessidade de instalação de sistemas fotovoltaicos.}
+		\resitem{Modelagem de sistemas fotovoltaicos.}
+	\end{itemize}
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Projetos Pessoais \& Profissionais}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\vspace{-2pt}
+	\begin{center}\begin{tabular*}{6.6in}{l@{\extracolsep{\fill}}r}
+	    \multicolumn{2}{c}{Site pessoal \cftdotfill{\cftdotsep} https://dematte.me/}\\
+		\multicolumn{2}{c}{Blog do Grupo de Extensão em Software e Hardware Livre \cftdotfill{\cftdotsep}https://colmeiaudesc.herokuapp.com/}\\
+		\multicolumn{2}{c}{Sistema web para a geração de diagramas unifilares \cftdotfill{\cftdotsep} https://topsun.dematte.me/}\\
+		\multicolumn{2}{c}{OpenLab \cftdotfill{\cftdotsep} https://github.com/ColmeiaUDESC/openlab-frontend}\\
+		\vphantom{E}
+\end{tabular*}
+\end{center}\vspace*{-16pt}
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Habilidades}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item
+	Linguagens de Programação \& Linguagens de Marcação
+	\begin{itemize}
+		\resitem{{\bf Experiente:} C, HTML, CSS, JavaScript, TypeScript}
+		\resitem{{\bf Conhecedor:} Java, Python, OCaml, Rust, C++}
+	\end{itemize}
+
+\item
+	Frameworks \& Bibliotecas
+	\begin{itemize}
+		\resitem{{\bf Experiente:} Next.js (React.js), Node.js, Chakra UI, TailwindCSS}
+		\resitem{{\bf Conhecedor:} Vue.js, Gatsby}
+	\end{itemize}
+
+
+\item
+	Soft skills
+	\begin{itemize}
+		\resitem{Raciocínio lógico, resolução de problemas, trabalho em equipe, gosta de ser desafiado, é perfumado.}
+	\end{itemize}
+\end{itemize}
+
+\end{document}
